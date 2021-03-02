@@ -1,0 +1,226 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Lucida Console", monospace;
+}
+
+#header {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	border-bottom: 1px solid black;
+	position: fixed;
+	z-index: 20;
+}
+
+#headerContainer {
+	width: 1480px;
+	height: 100%;
+	margin: auto;
+}
+
+#name {
+	margin-left: 0;
+	font-size: 20px;
+	float: left;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#links {
+	text-decoration: underline;
+	color: black;
+}
+
+#links:visited {
+	color: black;
+}
+
+#homeLink {
+	text-decoration: none;
+	color: black;
+}
+
+#homeLink:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#github {
+	margin-right: 0;
+	float: right;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	text-decoration: underline;
+}
+
+#resume {
+	margin-right: 20px;
+	float: right;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	text-decoration: underline;
+}
+
+#portfolio {
+	margin-right: 20px;
+	float: right;
+	font-size: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	text-decoration: underline;
+}
+
+#bodyContainer {
+	width: 1500px;
+	height: 1650px;
+	margin: auto;
+	margin-top: 60px;
+	background-color: rgb(250, 250, 250);
+}
+
+#about {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 70px;
+}
+
+#portfolioDiv {
+	width: 100%;
+}
+
+#projectImage {
+	margin-left: 50px;
+	width: 1400px;
+}
+
+#myWork {
+	margin-left: 50px;
+	font-size: 30px;
+	margin-top: 80px;
+	font-weight: none;
+	font-family: "Lucida Console", monospace;
+	margin-bottom: 0px;
+}
+
+#myResume {
+	margin-left: 50px;
+	font-size: 30px;
+	font-weight: none;
+	font-family: "Lucida Console", monospace;
+	margin-bottom: 0px;
+	padding-top: 70px;
+}
+
+#resumeDiv {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+#projectOne {
+	margin-left: 50px;
+	float: left;
+	margin-top: 30px;
+	height: 400px;
+	width: 45%;
+	background-image: url("images/map.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#projectTwo {
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
+	height: 400px;
+	width: 45%;
+	background-image: url("images/stars.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#projectThree {
+	margin-left: 50px;
+	float: left;
+	margin-top: 30px;
+	height: 400px;
+	width: 45%;
+	background-color: rgb(210, 210, 210);
+}
+
+#projectFour {
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
+	height: 400px;
+	width: 45%;
+	background-color: rgb(210, 210, 210);
+}
+
+#projectFive {
+	margin-left: 50px;
+	float: left;
+	margin-top: 30px;
+	height: 400px;
+	width: 45%;
+	background-color: rgb(210, 210, 210);
+}
+
+#projectSix {
+	margin-right: 50px;
+	float: right;
+	margin-top: 30px;
+	height: 400px;
+	width: 45%;
+	background-color: rgb(210, 210, 210);
+}
+
+#projectOverlay {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0;
+	color: white;
+}
+
+#projectOverlay:hover {
+	opacity: 0.75;
+	animation: projectOverlay ease 0.5s;
+	-webkit-animation: projectOverlay ease 0.5s;
+}
+
+@-webkit-keyframes projectOverlay {
+	0% {opacity: 0;}
+	100% {opacity: 0.75;}
+}
+
+#overlayLink {
+	margin: 0px;
+	text-decoration: none;
+	padding: 0px;
+	text-weight: none;
+	text-align: center;
+}
+
+#overlayHeader {
+	margin: 0px;
+	text-decoration: none;
+	padding: 0px;
+	padding-top: 220px;
+	text-weight: none;
+	text-align: center;
+}
+
+#overlayText {
+	margin: 0px;
+	text-decoration: none;
+	padding: 0px;
+	padding-top: 15px;
+	text-weight: none;
+	text-align: center;
+}
