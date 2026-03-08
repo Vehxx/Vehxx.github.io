@@ -1,105 +1,241 @@
-<html>
-	<head>
-		<link rel = "stylesheet" href = "index.css">
-	</head>
-	<body>
-		<div id = "header">
-			<div id = "headerContainer">
-				<div id = "name">
-					<a href = "index.html" id = "homeLink">isaac schwarz</a>
-				</div>
-				<div id = "github">
-					<a href = "https://github.com/Vehxx" id = "links">github</a>
-				</div>
-				<div id = "resume">
-					<a href = "resume.html" id = "links">résumé</a>
-				</div>
-				<div id = "portfolio">
-					<a href = "index.html" id = "links">portfolio</a>
-				</div>
-			</div>
-		</div>
-		<div id = "bodyContainer">
-			<div id = "about">
-				<p style = "font-weight: bold;">hi, i'm isaac - a computer science major in columbia, mo.</p><br /><p>this is the about me section. i don't actually know what to write in here yet so i'm going to put this placeholder text here.<br /><br />hopefully i'll think of something catchy later.</p><p style = "text-decoration: underline; padding-top: 5px;">isaacschwarz13@gmail.com</p>
-			</div>
-			<div id = "portfolioDiv">
-				<p id = "myWork">
-					my projects.
-				</p>
-				<div id = "projectOne">
-					<a href = "projectOne.html" id = "overlayLink">
-						<div id = "projectOverlay">
-							<h1 id = "overlayHeader">
-								unnamed project
-							</h1>
-							<p id = "overlayText">
-								a procedural map generation tool written in python using the opensimplex library.
-							</p>
-						</div>
-					</a>
-				</div>
-				<div id = "projectTwo">
-					<a href = "projectTwo.html" id = "overlayText" id = "overlayLink">
-						<div id = "projectOverlay">
-							<h1 id = "overlayHeader">
-								unnamed project
-							</h1>
-							<p id = "overlayText">
-								an image stacking program for astrophotography which is very much unfinished. this is more of a placeholder.
-							</p>
-						</div>
-					</a>
-				</div>
-				<div id = "projectThree">
-					<a href = "" id = "overlayText" id = "overlayLink">
-						<div id = "projectOverlay">
-							<h1 id = "overlayHeader">
-								placeholder text
-							</h1>
-							<p id = "overlayText">
-								placeholder text
-							</p>
-						</div>
-					</a>
-				</div>
-				<div id = "projectFour">
-					<a href = "" id = "overlayText" id = "overlayLink">
-						<div id = "projectOverlay">
-							<h1 id = "overlayHeader">
-								placeholder text
-							</h1>
-							<p id = "overlayText">
-								placeholder text
-							</p>
-						</div>
-					</a>
-				</div>
-				<div id = "projectFive">
-					<a href = "" id = "overlayText" id = "overlayLink">
-						<div id = "projectOverlay">
-							<h1 id = "overlayHeader">
-								placeholder text
-							</h1>
-							<p id = "overlayText">
-								placeholder text
-							</p>
-						</div>
-					</a>
-				</div>
-				<div id = "projectSix">
-					<a href = "" id = "overlayText" id = "overlayLink">
-						<div id = "projectOverlay">
-							<h1 id = "overlayHeader">
-								placeholder text
-							</h1>
-							<p id = "overlayText">
-								placeholder text
-							</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Stack</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    main {
+      width: min(100%, 960px);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    figure {
+      margin: 0 0 32px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #111;
+      cursor: pointer;
+    }
+
+    figcaption {
+      padding-top: 10px;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #d0d0d0;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(0, 0, 0, 0.92);
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      width: auto;
+      max-width: min(92vw, 1400px);
+      max-height: 88vh;
+      cursor: default;
+    }
+
+    .lightbox button {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      color: #fff;
+      font: inherit;
+      font-size: 2rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <figure>
+      <img src="images/000040560019.jpg" alt="Placeholder image 1">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560022.jpg" alt="Placeholder image 2">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560023.jpg" alt="Placeholder image 3">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560024.jpg" alt="Placeholder image 4">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560029.jpg" alt="Placeholder image 5">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560030.jpg" alt="Placeholder image 6">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560036.jpg" alt="Placeholder image 7">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560037.jpg" alt="Placeholder image 8">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040560038.jpg" alt="Placeholder image 9">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040570014.jpg" alt="Placeholder image 10">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040570015.jpg" alt="Placeholder image 11">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040570028.jpg" alt="Placeholder image 12">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040570031.jpg" alt="Placeholder image 13">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040570037.jpg" alt="Placeholder image 14">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580005.jpg" alt="Placeholder image 15">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580007.jpg" alt="Placeholder image 16">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580008.jpg" alt="Placeholder image 17">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580012.jpg" alt="Placeholder image 18">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580013.jpg" alt="Placeholder image 19">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580018.jpg" alt="Placeholder image 20">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580026.jpg" alt="Placeholder image 21">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580028.jpg" alt="Placeholder image 22">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580029.jpg" alt="Placeholder image 23">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580030.jpg" alt="Placeholder image 24">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580031.jpg" alt="Placeholder image 25">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580033.jpg" alt="Placeholder image 26">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580034.jpg" alt="Placeholder image 27">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+    <figure>
+      <img src="images/000040580035.jpg" alt="Placeholder image 28">
+      <figcaption>Placeholder text</figcaption>
+    </figure>
+  </main>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" id="lightbox-close" aria-label="Close image">X</button>
+    <img id="lightbox-image" src="" alt="">
+  </div>
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = document.getElementById("lightbox-close");
+    const galleryImages = document.querySelectorAll("main figure img");
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+    }
+
+    galleryImages.forEach((image) => {
+      image.addEventListener("click", () => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.classList.add("open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox.classList.contains("open")) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
 </html>
